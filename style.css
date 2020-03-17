@@ -1,0 +1,194 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN STYLES */
+.app {
+    display: grid;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.calculator {
+    width: 33vw;
+    height: 69vh;
+    background: url(img/tip.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 2vw;
+    padding: 1vw;
+    box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
+}
+
+.header {
+    height: 10vh;
+}
+
+.options {
+    display: grid;
+    grid-template-rows: 13vh 13vh 13vh 19vh;
+}
+
+/* Other styles */
+
+h1 {
+    font-family: "Teko", sans-serif;
+    text-align: center;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    text-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
+    font-size: 2.2vw;
+}
+
+hr {
+    width: 35%;
+    margin: 0 auto;
+    border: none;
+    color: black;
+    background-color: rgb(80, 62, 45);
+    padding: 0.1vw;
+    box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
+}
+
+/* Input Group styles */
+
+.input-group:first-child {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.pre {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    font-weight: 900;
+    font-size: 5vw;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(124, 98, 59, 0.5);
+    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    border-left: 1vw solid rgb(148, 112, 71);
+    border-radius: 0 35% 0 0;
+    animation: dolAnim 5s linear infinite;
+    /* box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56); */
+}
+
+.cost {
+    border: none;
+    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    background-color: rgba(226, 210, 144, 0.671);
+    height: 8vh;
+    align-self: end;
+    text-align: center;
+    /* box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56); */
+}
+
+.cost::placeholder {
+    color: rgb(65, 44, 48);
+    font-size: 1rem;
+}
+
+.cost:hover::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.cost:focus {
+    outline: 2px solid rgb(145, 114, 71);
+}
+
+.input-group:nth-child(2) {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.service {
+    border: none;
+    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    background-color: rgba(226, 210, 144, 0.671);
+    height: 8vh;
+    width: 31vw;
+    align-self: center;
+    text-align: center;
+    text-align-last: center;
+    font-size: 1rem;
+}
+
+.service:hover {
+    color: white;
+}
+
+.service:hover option {
+    color: black;
+}
+
+.service:focus {
+    outline: 2px solid rgb(145, 114, 71);
+}
+
+
+
+.service~option {
+    font-size: 0.9rem;
+    text-align: center;
+    text-align-last: center;
+}
+
+
+.people {
+    border: none;
+    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    background-color: rgba(226, 210, 144, 0.671);
+    height: 8vh;
+    width: 31vw;
+    align-self: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.people:focus {
+    outline: 2px solid rgb(145, 114, 71);
+}
+
+.people::placeholder {
+    color: black;
+}
+
+.people:hover::placeholder {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+@keyframes dolAnim {
+    0% {
+        color: black;
+    }
+    25% {
+        color: rgb(48, 45, 41);
+    }
+    50% {
+        color: rgb(114, 90, 71);
+    }
+    75% {
+        color: rgb(51, 54, 39);
+    }
+    100% {
+        color: black;
+    }
+}

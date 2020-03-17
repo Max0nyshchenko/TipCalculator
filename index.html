@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="calculator">
+            <div class="header">
+                <h1>Tip Calculator</h1>
+                <hr>
+            </div>
+            <main>
+                <section class="options">
+                    <div class="input-group">
+                        <div class="pre">$</div>
+                        <input type="number" class="cost" placeholder="How much was the bill?"/>
+                    </div>
+                    <div class="input-group">
+                        <select class="service" required>
+                            <option disabled selected>How was your service?</option>
+                            <option value="30">5 - Amazing</option>
+                            <option value="20">4 - Great</option>
+                            <option value="10">3 - Good</option>
+                            <option value="5">2 - Alright</option>
+                            <option value="0">1 - Terrible</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" class="people" placeholder="How many people are sharing the bill?">
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
