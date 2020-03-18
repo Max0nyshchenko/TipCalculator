@@ -6,125 +6,102 @@
     font-family: 'Libre Baskerville', serif;
 }
 
-/* MAIN STYLES */
-.app {
-    display: grid;
-    background: url(img/bg.jpg);
+/*  */
+
+.wrapper {
+    background-image: url(img/bg.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
-    justify-content: center;
+    display: grid;
     align-content: center;
+    justify-content: center;
 }
 
-/* main {
+.app {
+    width: 350px;
     display: grid;
-    grid-template-rows: 58vh 13vh;
-} */
-
-.calculator {
-    width: 33vw;
-    height: 69vh;
-    background: url(img/tip.jpg);
+    padding: 10px 15px;
+    background-image: url(img/tip.jpg);
     background-position: center;
     background-size: cover;
-    border-radius: 2vw;
-    padding: 1vw;
-    box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
-    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgb(87, 73, 56);
 }
 
-.header {
-    height: 10vh;
-}
-
-.options {
+.app-wrapper {
     display: grid;
-    grid-template-rows: 13vh 13vh 13vh 18.5vh 13vh;
-    overflow: auto;
 }
-
-/* Other styles */
 
 h1 {
+    font-size: 1.5rem;
+    padding: 5px 10px;
     text-align: center;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    text-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
-    font-size: 2.2vw;
+    text-shadow: 0 7px 5px rgb(87, 73, 56);
 }
 
 hr {
-    width: 35%;
-    margin: 0 auto;
     border: none;
-    color: black;
-    background-color: rgb(80, 62, 45);
-    padding: 0.1vw;
-    box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
+    background-color: black;
+    padding: 1px;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 7px 5px rgb(87, 73, 56);
 }
 
-/* Input Group styles */
-
-.input-group:first-child {
+/* Main styles */
+.cost-wrapper {
     display: grid;
     grid-template-columns: 20% 80%;
+    padding: 10px 0;
 }
 
 .pre {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    font-weight: 900;
-    font-size: 5vw;
-    align-items: center;
-    justify-items: center;
     background-color: rgba(124, 98, 59, 0.5);
-    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
-    border-left: 1vw solid rgb(148, 112, 71);
+    border-bottom: 3px solid rgba(105, 57, 57, 0.733);
+    border-left: 10px solid rgb(148, 112, 71);
     border-radius: 0 35% 0 0;
     animation: dolAnim 5s linear infinite;
     font-family: Arial, Helvetica, sans-serif;
-    /* box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56); */
+    height: 75px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 40px;
+    font-weight: 900;
 }
 
-.cost {
+#cost {
     border: none;
-    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    border-bottom: 3px solid rgba(105, 57, 57, 0.733);
     background-color: rgba(226, 210, 144, 0.671);
-    height: 8vh;
+    height: 50px;
     align-self: end;
     text-align: center;
     font-size: 1rem;
-    /* box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56); */
 }
 
-.cost::placeholder {
+#cost::placeholder {
     color: rgb(0, 0, 0);
     font-size: 1rem;
     font-family: 'Libre Baskerville', serif;
 }
 
-.cost:hover::placeholder {
+#cost:hover::placeholder {
     color: rgb(255, 255, 255);
 }
 
-.cost:focus {
+#cost:focus {
     outline: 2px solid rgb(145, 114, 71);
-}
-
-.input-group:nth-child(2) {
-    display: grid;
-    align-items: center;
-    justify-items: center;
 }
 
 .service {
     border: none;
-    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    border-bottom: 3px solid rgba(105, 57, 57, 0.733);
     background-color: rgba(226, 210, 144, 0.671);
-    height: 8vh;
-    width: 31vw;
+    height: 50px;
+    width: 100%;
     align-self: center;
     text-align: center;
     text-align-last: center;
@@ -143,8 +120,6 @@ hr {
     outline: 2px solid rgb(145, 114, 71);
 }
 
-
-
 .service option {
     font-size: 1.2rem;
     text-align: center;
@@ -152,15 +127,17 @@ hr {
 }
 
 
+
 .people {
     border: none;
-    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
+    border-bottom: 3px solid rgba(105, 57, 57, 0.733);
     background-color: rgba(226, 210, 144, 0.671);
-    height: 8vh;
-    width: 31vw;
+    height: 50px;
+    width: 100%;
     align-self: center;
     text-align: center;
     font-size: 1rem;
+    margin: 10px 0;
 }
 
 .people:focus {
@@ -177,23 +154,13 @@ hr {
 }
 
 
-.you-should-tip {
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-}
-
-.you-should-tip > h3 {
-    text-align: center;
-    text-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
-    align-self: start;
-}
 
 .tip {
     padding: 20px 30px;
     background-color: rgba(226, 210, 144, 0.671);
     justify-self: center;
-    border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
-    border-radius: 2vw 2vw 0 0;
+    border-bottom: 3px solid rgba(105, 57, 57, 0.733);
+    border-radius: 20px 20px 0 0;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -202,14 +169,15 @@ hr {
     background: radial-gradient(rgba(226, 210, 144, 0.671), rgba(138, 117, 72, 0.6));
 }
 
-#tip-btn {
+
+.tip-btn {
     font-family: monospace;
-    width: 10vw;
-    height: 13vh;
+    width: 100px;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.795);
     justify-self: center;
-    border-top: 0.3vw solid rgba(105, 57, 57, 0.733);
-    border-radius: 0vw 0vw 2vw 2vw;
+    border-top: 3px solid rgba(105, 57, 57, 0.733);
+    border-radius: 0 0 20px 20px;
     display: grid;
     align-self: start;
     align-items: center;
@@ -220,12 +188,24 @@ hr {
     /* background: radial-gradient(rgba(226, 210, 144, 0.671), rgba(138, 117, 72, 0.6)); */
 }
 
-#tip-btn:hover {
+.tip-btn:hover {
     background-color: rgb(71, 67, 71);
+    cursor: pointer;
 }
-#tip-btn:active {
+.tip-btn:active {
     font-size: 1.8rem;
 }
+
+
+h3 {
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 
@@ -245,13 +225,13 @@ hr {
         color: black;
     }
     25% {
-        color: rgb(48, 45, 41);
+        color: rgba(26, 25, 24, 0.664);
     }
     50% {
-        color: rgb(114, 90, 71);
+        color: rgba(66, 61, 48, 0.678);
     }
     75% {
-        color: rgb(51, 54, 39);
+        color: rgba(36, 34, 32, 0.678);
     }
     100% {
         color: black;
