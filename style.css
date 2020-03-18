@@ -17,6 +17,11 @@
     align-content: center;
 }
 
+/* main {
+    display: grid;
+    grid-template-rows: 58vh 13vh;
+} */
+
 .calculator {
     width: 33vw;
     height: 69vh;
@@ -26,6 +31,7 @@
     border-radius: 2vw;
     padding: 1vw;
     box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56);
+    overflow: auto;
 }
 
 .header {
@@ -34,7 +40,8 @@
 
 .options {
     display: grid;
-    grid-template-rows: 13vh 13vh 13vh 19vh;
+    grid-template-rows: 13vh 13vh 13vh 18.5vh 13vh;
+    overflow: auto;
 }
 
 /* Other styles */
@@ -88,6 +95,7 @@ hr {
     height: 8vh;
     align-self: end;
     text-align: center;
+    font-size: 1rem;
     /* box-shadow: 0 0.5vw 0.7vw rgb(87, 73, 56); */
 }
 
@@ -137,8 +145,8 @@ hr {
 
 
 
-.service~option {
-    font-size: 0.9rem;
+.service option {
+    font-size: 1.2rem;
     text-align: center;
     text-align-last: center;
 }
@@ -181,8 +189,7 @@ hr {
 }
 
 .tip {
-    width: 10vw;
-    height: 13vh;
+    padding: 20px 30px;
     background-color: rgba(226, 210, 144, 0.671);
     justify-self: center;
     border-bottom: 0.3vw solid rgba(105, 57, 57, 0.733);
@@ -192,8 +199,33 @@ hr {
     justify-items: center;
     font-size: 2rem;
     font-weight: 900;
+    background: radial-gradient(rgba(226, 210, 144, 0.671), rgba(138, 117, 72, 0.6));
 }
 
+#tip-btn {
+    font-family: monospace;
+    width: 10vw;
+    height: 13vh;
+    background-color: rgba(0, 0, 0, 0.795);
+    justify-self: center;
+    border-top: 0.3vw solid rgba(105, 57, 57, 0.733);
+    border-radius: 0vw 0vw 2vw 2vw;
+    display: grid;
+    align-self: start;
+    align-items: center;
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    /* background: radial-gradient(rgba(226, 210, 144, 0.671), rgba(138, 117, 72, 0.6)); */
+}
+
+#tip-btn:hover {
+    background-color: rgb(71, 67, 71);
+}
+#tip-btn:active {
+    font-size: 1.8rem;
+}
 
 
 
