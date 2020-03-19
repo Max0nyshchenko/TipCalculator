@@ -6,6 +6,9 @@ const Btn = document.querySelector('.tip-btn');
 
 const wrapper = document.querySelector('.wrapper');
 const appWrapper = document.querySelector('.app-wrapper');
+const set = document.querySelector('.set');
+const set2 = document.querySelector('#set2');
+const set3 = document.querySelector('#set3');
 
 const tl = new TimelineMax();
 
@@ -61,4 +64,55 @@ tl.fromTo(
         fontSize: '2rem'
     },
     '-=1'
+)
+.fromTo(
+    set,
+    1.5,
+    {
+        height: '0%',
+        width: '0%',
+        opacity: 0
+    },
+    {
+        height: '100%',
+        width: '100%',
+        opacity: 1,
+        ease: Power2.easeInOut
+    }
+)
+.fromTo(
+    set2,
+    1.5,
+    {
+        height: '0%',
+        width: '0%',
+        x: '650',
+        opacity: 0
+    },
+    {
+        height: '100%',
+        width: '100%',
+        x: '0',
+        opacity: 1
+    },
+    '-=1.5'
+)
+.fromTo(
+    set3,
+    1.5,
+    {
+        height: '0%',
+        width: '0%',
+        y: '780',
+        x: '600',
+        opacity: 0
+    },
+    {
+        height: '100%',
+        width: '100%',
+        y: '0',
+        x: '0',
+        opacity: 1
+    },
+    '-=1.5'
 );
