@@ -61,4 +61,4 @@ tl.fromTo(
         fontSize: '2rem'
     },
     '-=1'
-)
+);
